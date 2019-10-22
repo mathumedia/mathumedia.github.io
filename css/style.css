@@ -51,7 +51,7 @@ color: #fff;
 
 #home-cover {
     height: 100%;
-    background-image: url("../img/bg-home.jpeg");
+    background-image: url("../img/bg-home.jpg");
     
    
 }
@@ -60,7 +60,7 @@ color: #fff;
     width: 100%;
     height: 100%;
     display: table;
-   background-color:  rgba(0, 0, 0, .8);
+   background-color:  rgba(0, 0, 0, .3);
 }
 
 #home-content-box-inner {
@@ -238,7 +238,7 @@ color: #fff;
     width: 60%;
     height: 700px;
     float: right;
-    background-image: url(../img/bg-about.jpeg);
+    background-image: url(../img/bg-stats.jpg);
     border-left: 200px solid #fff;
     border-top: 700px solid transparent;
     background-color:  rgba(0, 0, 0, .8);
@@ -273,6 +273,79 @@ color: #fff;
 }
 
 /*====================================================
+                       WORK
+======================================================*/
+
+.row.no-gutters [class*=col-] {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.img-wrapper {
+    overflow: hidden;
+}
+
+.img-wrapper img {
+    -webkit-transition: -webkit-transform .5s ease;
+    transition: -webkit-transform .5s ease;
+    transition: transform .5s ease;
+    transition: transform .5s ease, -webkit-transform .5s ease;
+}
+
+.img-wrapper img:hover {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+    cursor: zoom-in;
+}
+
+/*====================================================
+                       TEAM
+======================================================*/
+
+.team-member {
+    margin: 0 15px;
+}
+
+.team-member-info {
+    padding: 10px 0 30px 0;
+}
+
+h4.team-member-name {
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding-top: 2px;
+}
+
+h4.team-member-designation {
+    color: #34c6d3;
+    font-size: 15px;
+    font-weight: 700;
+    font-style: italic;
+    letter-spacing: 1px;
+    margin-top: 5px;
+}
+
+/* Teachers Area CSS */
+.single-teachers-area {
+    position: relative;
+    z-index: 1; 
+}
+.single-teachers-area .teachers-info h5 {
+      font-weight: 400;
+      margin-bottom: 3px; 
+    }
+.single-teachers-area .teachers-info span {
+      color: #69bc5f;
+      font-size: 14px; 
+    }
+ .section-padding-0-100 {
+        padding-top: 0;
+        padding-bottom: 100px; 
+    }
+
+
+/*====================================================
                        SOCIAL
 ======================================================*/
 
@@ -305,12 +378,13 @@ color: #fff;
     color: #34c6d3;
 }
 
+
 /*====================================================
                        STATS
 ======================================================*/
 
 #stats-cover {
-    background-image: url("../img/bg-stats.jpeg");
+    background-image: url("../img/photo.jpg");
 }
 
 #stats .content-box {
@@ -511,12 +585,14 @@ form .form-control {
 	    float:none;
 		text-align:center;
         width:100%;
+    }
 
-        #home-heading p{
-            font-size: 20px;
-            font-weight: 300;
-        }
+       
         
+    }
+    #home-heading p{
+        font-size: 20px;
+        font-weight: 300;
     }
     
     #home-heading p{
@@ -524,3 +600,14 @@ form .form-control {
         font-size: 20px;
         font-weight: 300;
     }
+
+
+    /* Email  */
+    #send-btn h4{
+color: #fff;
+    }
+
+    #send-btn a{
+        color: #fff;
+        text-transform: lowercase;
+            }
